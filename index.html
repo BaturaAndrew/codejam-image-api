@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Codejam image-api</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+  <script src="https://kit.fontawesome.com/0578106aca.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="navigation flex-column">
+        <a class="logo__link flex-column" href="#">
+          <i class="logo_ico fa fa-bars fa-2x"></i>
+          <h1 class="logo__text">CodeJam - Pallete</h1>
+        </a>
+
+        <div class="navigation__menu">
+          <i class="menu_ico fa fa-ellipsis-v fa-2x"></i>
+        </div>
+      </div>
+    </header>
+
+    <main class="main flex-column">
+      <div class="panel">
+        <ul class="pallete">
+          <li class="paintBucket">
+            <i class="fa fa-fill-drip"></i>
+            Fill <ins>b</ins>ucket
+          </li>
+          <li class="colorPicker">
+            <i class="fa fa-eye-dropper"></i>
+            <ins>C</ins>hoose color
+          </li>
+          <li class="pencil">
+            <i class="fa fa-pencil"></i>
+            <ins>P</ins>encil
+          </li>
+          <li class="transform inactive">
+            <i class="fa fa-exchange"></i>
+            <ins>T</ins>ransform
+          </li>
+          <li>
+            <button class="save-state" tabindex="-1"> Save state (Alt+S)</button></p>
+          </li>
+        </ul>
+
+        <ul class="colors">
+          <li class="curr-color__item active">
+            <div class="circle curr-color"></div>
+            Current color
+          </li>
+          <li class="prev-color__item">
+            <div class="circle prev-color"></div>
+            Prev color
+          </li>
+          <li class="red-color__item">
+            <div class="circle red-color"></div>
+            Red
+          </li>
+          <li class="blue-color__item">
+            <div class="circle blue-color"></div>
+            Blue
+          </li>
+          <li>
+            <input class="color" type="color" value="#ff0000" tabindex="-1">
+          </li>
+        </ul>
+      </div>
+
+      <div class="canvas-control-block">
+        <button class="button load">Load</button>
+        <input class="input__search" type="text">
+        <button class="button clear">Clear</button>
+        <div class="canvas">
+          <canvas id="canvas" width="512" height="512"></canvas>
+        </div>
+
+        <div class="range">
+          <input class="range__input" type="range" value="512" min="32" max="512" step="32" list="dimentions" />
+          <datalist class="range__list" id="dimentions">
+            <option class="range__opt">32</option>
+            <option class="range__opt">64</option>
+
+            <option class="range__opt">128</option>
+
+            <option class="range__opt">256</option>
+
+            <option class="range__opt opt0">512</option>
+          </datalist>
+        </div>
+      </div>
+
+
+
+    </main>
+  </div>
+</body>
+
+</html>

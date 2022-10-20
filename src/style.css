@@ -1,0 +1,283 @@
+a {
+  text-decoration: none;
+}
+
+.flex-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  min-width: 600px;
+  width: 97%;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  margin: 5px auto;
+}
+
+.header {
+  height: 48px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+  margin-bottom: 40px;
+}
+
+.navigation {
+  height: 100%;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.logo_ico {
+  margin-right: 35px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.menu_ico {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.logo__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.main {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.panel li ins {
+  padding-left: 10px;
+}
+
+.pallete,
+.colors,
+.swicher {
+  margin-left: 40px;
+  width: 228px;
+  height: 276px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.colors {
+  margin-top: 20px;
+  height: 330px;
+}
+
+.pallete li,
+.colors li,
+.swicher li {
+  padding: 20px 20px;
+  display: flex;
+}
+
+.colors li:nth-child(2),
+.pallete li:nth-child(2) {
+  border-bottom: 1px solid rgb(0, 0, 0, 0.12);
+}
+
+.panel li:hover,
+.panel li:focus,
+.swicher li:hover,
+.swicher li:focus {
+  background-color: lavender;
+  outline: none;
+  cursor: pointer;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.curr-color {
+  background-color: green;
+}
+
+.prev-color {
+  background-color: yellow;
+}
+
+.red-color {
+  background-color: red;
+}
+
+.blue-color {
+  background-color: blue;
+}
+
+.transform-to-circle {
+  border-radius: 50%;
+}
+
+.active {
+  background-color: lavender;
+}
+
+.inactive {
+  color: grey;
+}
+
+#canvas {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+  width: 512px;
+  height: 512px;
+  margin-top: 25px;
+  image-rendering: pixelated;
+}
+
+.canvas-control-block {
+  margin-right: 200px;
+}
+
+.button {
+  width: 65px;
+  height: 35px;
+  border: none;
+  font-family: "Futura Demi C";
+  font-size: 13px;
+  border-radius: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #00bcd4;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+}
+
+.load,
+.clear {
+
+  height: 35px;
+  line-height: 35px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.24);
+  font-size: 18px;
+}
+
+.load {
+  width: 65px;
+}
+
+.clear {
+  width: 75px;
+}
+
+.load:hover,
+.clear:hover {
+  transform: translateY(2px);
+}
+
+.load:active,
+.clear:active {
+  background: #251c1c;
+}
+
+input {
+  height: 35px;
+  box-sizing: border-box;
+  border: 1px solid #4cebff;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.24);
+  font-size: 20px;
+}
+
+html {
+  margin: 1em;
+}
+
+.range {
+  position: relative;
+  margin-top: 10px;
+}
+
+.range__input:active,
+.range__input:hover,
+.range__input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.range__input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  -webkit-appearance: none;
+  height: 20px;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity .2s;
+  border-radius: 2px;
+  background: rgb(158, 222, 233);
+  margin: 0 auto;
+}
+
+.range__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 20px;
+  background: rgb(15, 115, 196);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.range__input::-moz-range-thumb {
+  background: #ccc;
+}
+
+.range__input::-ms-track {
+  background: transparent;
+}
+
+.range__input::-ms-fill-lower {
+  background: #e1e1e1;
+  border-radius: 10px;
+}
+
+.range__input::-ms-fill-upper {
+  background: #eee;
+}
+
+.range__list {
+  display: flex;
+  /* justify-content: space-between; */
+  height: auto;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.range__opt {
+  font-size: 15px;
+}
+
+.range__opt:nth-child(1) {
+  margin-right: 13px;
+}
+
+.range__opt:nth-child(2) {
+  margin-right: 41px;
+}
+
+.range__opt:nth-child(3) {
+  margin-right: 110px;
+}
+
+.range__opt:nth-child(5) {
+  margin-left: 231px;
+}
+
+/* .range__opt:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: auto;
+  padding-left: 3px;
+  text-indent: 0;
+} */
